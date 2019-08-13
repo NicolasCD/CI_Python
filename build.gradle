@@ -1,19 +1,5 @@
 
-buildscript {
-    repositories {
-        jcenter()
-		mavenCentral()
-		maven {
-			url 'https://oss.sonatype.org/content/repositories/snapshots/'
-		}
-    }
 
-    dependencies {
-        classpath group: 'io.saagie', name: 'gradle-saagie-plugin', version: '2.+'
-    }
-}
-
-apply plugin: 'io.saagie.gradle-saagie-plugin'
 
 saagie {
 	server {
@@ -26,4 +12,5 @@ saagie {
     category = 'processing'
   ]}
   fileName = 'test.py'
+
 }
