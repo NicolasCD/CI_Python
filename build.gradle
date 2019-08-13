@@ -21,10 +21,10 @@ saagie {
 		platform = 6
    }
   jobs {[
-    name = "test nicolas"
-    type = "python"
-    category = "processing"
-    fileName = "test.py"
-    languageVersion = "3.5.2"
+    name = 'test nicolas'
+    type = 'python'
+    category = 'processing'
+    languageVersion = '3.5.2'
   ]}
+  fileName = 'test.py'
 }
