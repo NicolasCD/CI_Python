@@ -22,9 +22,7 @@ apply plugin: 'io.saagie.gradle-saagie-plugin'
 saagie {
 	server {
 		url = 'https://saagie-manager.prod.saagie.io'
-    login = 'nicolas.chmiel'
-    password = 'Bougie1810*'
-    platform = 6
+		platform = 6
    }
   jobs {[
     name = "test nicolas"
