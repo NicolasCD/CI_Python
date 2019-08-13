@@ -1,16 +1,16 @@
-
-
+task wrapper(type: Wrapper) {
+	gradleVersion = '5.2.1' 
+}
 
 saagie {
 	server {
 		url = 'https://saagie-manager.prod.saagie.io'
 		platform = 6
-   }
-  jobs {[
-    name = 'test nicolas'
-    type = 'python'
-    category = 'processing'
-  ]}
-  fileName = 'test.py'
-
+	}
+	jobs {[
+		name = 'test hello world'
+		type = 'python'
+		category = 'processing'
+	]}
+	fileName = 'test.py'
 }
