@@ -26,6 +26,5 @@ saagie {
     category = "processing"
     fileName = "test.py"
     languageVersion = "3.5.2"
-    streaming = false
   ]}
 }
