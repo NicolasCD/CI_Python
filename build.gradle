@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        jcenter()
+		mavenCentral()
+		maven {
+			url 'https://oss.sonatype.org/content/repositories/snapshots/'
+		}
+    }
+
+    dependencies {
+        classpath group: 'io.saagie', name: 'gradle-saagie-plugin', version: '2.+'
+    }
+}
+
+apply plugin: 'io.saagie.gradle-saagie-plugin'
+
+saagie {
+	server {
+		url = 'https://saagie-manager.prod.saagie.io'
+    login = 'nicolas.chmiel'
+    password = 'Bougie1810*'
+    platform = 6
+   }
+  jobs {[
+    name = "test nicolas"
+    type = "python"
+    category = "processing"
+    fileName = "test.py"
+    languageVersion = <language_version>
+    streaming = false
+  ]}
+}
