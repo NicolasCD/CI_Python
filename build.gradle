@@ -24,7 +24,6 @@ saagie {
     name = 'test nicolas'
     type = 'python'
     category = 'processing'
-    languageVersion = '3.5.2'
   ]}
   fileName = 'test.py'
 }
